@@ -1,0 +1,273 @@
+.main_page
+{
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 'x . . . p'
+        '. b b c .'
+        'a d d d .'
+        '. e e e .'
+        '. f m n .';
+    grid-gap: 10px;
+    font: 14px Arial;
+    margin: 10px;
+}
+
+.main_page a
+{
+    color: rgb(18, 113, 201);
+    text-decoration: none;
+}
+
+.main_page a:hover,
+.city:hover
+{
+    opacity: 1;
+    color: red;
+}
+
+.city
+{
+    grid-area: x;
+    opacity: .6;
+}
+
+.logo
+{
+    grid-area: a;
+    font-size: 3em;
+    text-align: right;
+    margin-top: 40px;
+}
+
+.news
+{
+    grid-area: b;
+    margin-bottom: 20px;
+}
+
+.news a,
+.offer
+{
+    margin-right: 10px;
+}
+
+.name,
+.news_city,
+.offer
+{
+    font-size: 1.4em;
+}
+
+h2
+{
+    font-size: 1em;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.special_opacity
+{
+    opacity: .6;
+}
+
+.world_news,
+.TV_program ul
+{
+    padding: 0;
+}
+
+.world_news li,
+.visited_sections div,
+.jokes div
+{
+    margin-top: 10px;
+}
+
+.world_news a,
+.exchange_rates a,
+.visited_sections div a,
+.TV_program ul a,
+.map_of_city div a,
+.showbill div a
+{
+    color: black;
+}
+
+.exchange_rates a
+{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.current_offer
+{
+    grid-area: c;
+    width: 120px;
+}
+
+.search_bar
+{
+    grid-area: d;
+}
+
+.search
+{
+    height: 40px;
+}
+
+.search_line
+{
+    height: 100%;
+    width: 90%;
+    border: 2px solid rgb(245, 213, 69);
+    box-sizing: border-box;
+}
+
+.button
+{
+    height: 100%;
+    width: 10%;
+    vertical-align: bottom;
+    border: none;
+    background-color: rgb(245, 213, 69);
+}
+
+.sections
+{
+    display: flex;
+    width: 70%;
+    font-size: 16px;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.example
+{
+    margin: 5px;
+}
+
+.advertising
+{
+    grid-area: e;
+}
+
+.advertising img
+{
+    width: 90%;
+}
+
+.widgets1
+{
+    grid-area: f;
+}
+
+.visited_section
+{
+    font-weight: bold;
+}
+
+.widgets2
+{
+    grid-area: m;
+}
+
+.TV_program li
+{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.tv_online
+{
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #418af9;
+    background-image: linear-gradient(to right,#00a3fa,#716ef8);
+}
+
+.widgets3
+{
+    grid-area: n;
+}
+
+.widgets3 .info
+{
+    font-size: 1.3em;
+    margin-left: 5px;
+}
+
+.widgets3 .comment
+{
+    padding-top: 10px;
+}
+
+.map_of_city .comment a
+{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.shadingTop
+{
+    width: 290px;
+    position: relative;
+    height: 20px;
+    z-index: 2;
+    top: 20px;
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.shadingBottom
+{
+    width: 290px;
+    position: relative;
+    height: 20px;
+    z-index: 2;
+    bottom: 20px;
+    background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.auto_news
+{
+    height: 200px;
+    width: 290px;
+    overflow-y: scroll;
+}
+
+.auto_news::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.widgets1 article,
+.widgets2 article,
+.widgets3 article
+{
+    margin-top: 25px;
+}
+
+.mail
+{
+    grid-area: p;
+    box-shadow: 0 0 4px #123;
+    padding: 5px;
+}
+
+.mail_account
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mail_account::first-letter,
+.logo::first-letter
+{
+    color: red;
+}
