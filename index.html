@@ -12,9 +12,8 @@
                 <img class="navigation_icon" src="images/navigation_icon.png" alt="Значок навигации">
                 Екатеринбург
             </div>
-            <div class="logo">
-                Яндекс
-            </div>
+            <div class="logo"><img class="logo_source" src="images/logo.png" alt="Яндекс"></div>
+            <div class="setup">Настройка</div>
             <article class="news">
                 <a href="#" class="name">Сейчас в СМИ</a>
                 <a href="#" class="news_city special_opacity">в Екатеринбурге</a>
@@ -51,7 +50,7 @@
                 <a href="#" class="offer">Браузер без опасности</a>
             </article>
             <article class="search_bar">
-                <div class="sections">
+                <div class="navigation">
                     <a href="#">Видео</a>
                     <a href="#">Картинки</a>
                     <a href="#">Новости</a>
@@ -62,7 +61,8 @@
                     <a href="#">ещё</a>
                 </div>
                 <div class="search">
-                    <input type="text" class="search_line"><input type="button" class="button" value="Найти">
+                    <input type="text" class="search_line"><button class="button">
+                        <span class="button_text">Найти</span></button>
                 </div>
                 <div class="example">Найдётся всё. Например, <span class="special_opacity">
                     выхожу один я на дорогу</span></div>
@@ -70,7 +70,7 @@
             <article class="advertising">
                 <img src="images/advertising.png" alt="Реклама">    
             </article>
-            <article class="widgets1">
+            <article class="widgets_left_column">
                 <article class="visited_sections">
                     <h2><a href="#" class="name">Посещаемое</a></h2>
                     <div><a href="#" class="visited_section">Маркет</a> —
@@ -94,7 +94,7 @@
                     - Вас лечить хорошо или бесплатно?</div>
                 </article>
             </article>
-            <article class="widgets2">
+            <article class="widgets_central_column">
                 <article class="TV_program">
                     <h2><a href="#" class="name">Телепрограмма</a></h2>
                     <span class="tv_online">ТВ Онлайн ▶</span>
@@ -164,14 +164,16 @@
                     <div class="shadingBottom"></div>
                 </article>
             </article>
-            <article class="widgets3">
+            <article class="widgets_right_column">
                 <article class="weather">
-                    <h2><a href="#" class="name">Погода</a></h2>
+                    <h2><a href="#" class="name">Погода</a>
+                    <img class="weather_source" src="images/weather.png" alt="Погода"></h2>
                     <span class="info">-3 &deg;С</span>
                     <div class="comment">Вечер -5, ночь -7</div>
                 </article>
                 <article class="situation_on_road">
-                    <h2><a href="#" class="name">Пробки</a></h2>
+                    <h2><a href="#" class="name">Пробки</a>
+                    <img class="probki_source" src="images/probki.png" alt="Пробки"></h2>
                     <span class="info">4 балла</span>
                     <div class="comment">Местами затруднения</div>
                 </article>
@@ -192,9 +194,7 @@
                 </article>
             </article>
             <article class="mail">
-                <div class="mail_account">
-                    login
-                </div>
+                <div class="mail_account">login</div>
                 Почта 138
             </article>
         </section>
